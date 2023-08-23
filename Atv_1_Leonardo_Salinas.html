@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome..." required>
+            <br>
+        </div>
+
+        <!-- input radio -->
+        <div>
+            <p>Você gostou de assistir questão de tempo?<br>Avalie de acordo com as estrilhas sendo 5* gostei muito e 1* estrelinha ruim</p>
+            
+            <p>Selecione quando você viu o filme:</p>
+
+            <form>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data">
+                <br>
+                <br>
+            </form>
+
+            <div>
+                <input type="radio" id="muito" name="assistiu">
+                <label for="muito">* * * * *</label>
+            </div>
+            <div>
+                <input type="radio" id="gostei" name="assistiu">
+                <label for="gostei">* * * *</label>
+            </div>
+            <div>
+                <input type="radio" id="interessante" name="assistiu">
+                <label for="interessante">* * *</label>
+            </div>
+            <div>
+                <input type="radio" id="ruim" name="assistiu">
+                <label for="ruim">* *</label>
+            </div>
+            <div>
+                <input type="radio" id="uma_merda" name="nao_assistiu">
+                <label for="uma_merda">*</label>
+            </div>
+            <br>
+        </div>
+
+        <!-- select -->
+        <div>
+
+
+            <label for="filme">Qual sua avalição para o filme Spider-Man: Across the Spider-Verse?</label>
+            <select name="filme" id="filme" required>
+                <option selected disabled>Selecione...</option>
+                <option value="4">Gostei muito</option>
+                <option value="3">Gostei</option>
+                <option value="2">Interessante</option>
+                <option value="1">Ruim</option>
+            </select>
+            <br><br>
+        </div>
+
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
